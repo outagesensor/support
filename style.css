@@ -40,6 +40,14 @@ body {
   text-align: center;
 }
 
+.logo {
+  display: block;
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+}
+
 .eyebrow {
   margin: 0 0 12px;
   font-size: 15px;
