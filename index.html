@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Power Monitor — Support</title>
+<meta name="description" content="Support and FAQ for the Power Monitor iOS app — real-time power and internet outage alerts for your home or business.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="container">
+    <p class="eyebrow">Power Monitor</p>
+    <h1>Know the moment the power goes out — and the moment it's back.</h1>
+    <p class="tagline">
+      Power Monitor pairs with a small sensor at your home, cabin, or business to watch for
+      power and internet outages around the clock. The moment something changes, you get a
+      push notification — even if you're a thousand miles away. No big-tech cloud subscription
+      required: the whole system is open and self-hostable if you'd rather run your own server.
+    </p>
+  </div>
+</header>
+
+<main>
+  <section id="faq" class="section">
+    <div class="container">
+      <h2>Frequently Asked Questions</h2>
+
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>How do I add a new sensor?</span>
+            <span class="faq-icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-answer">
+            <p>Tap the <strong>+</strong> button on the dashboard, then follow the in-app setup flow: your
+            phone connects to the sensor's temporary Wi-Fi hotspot, you choose your home network and give
+            the sensor a name, and it's online within a minute or two. No soldering or extra hardware app
+            needed — just the sensor and your phone.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>What's the difference between a "power outage" and an "internet outage" alert?</span>
+            <span class="faq-icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-answer">
+            <p>A <strong>power outage</strong> means the sensor itself lost electricity — it uses the last
+            moment of stored power to send one final message before going dark. An
+            <strong>internet outage</strong> means the sensor still has power, but it can't reach your
+            Wi-Fi or the internet, usually because your router or ISP is down rather than the electricity
+            itself. Power Monitor tells these apart automatically, so you're not alerted about a real
+            outage when it's really just a router hiccup.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>How does sensor sharing work?</span>
+            <span class="faq-icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-answer">
+            <p>Share the sensor's <strong>device ID</strong> (shown on its detail screen) with a family
+            member or co-worker. They can add it in their own app via <strong>Add Sensor Manually</strong>,
+            which links it in read-only monitoring mode — they'll see its live status and get their own
+            outage notifications, but can't change its Wi-Fi setup from their copy of the app. Handy for a
+            shared vacation home or keeping an eye on a parent's house.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Why am I not receiving notifications?</span>
+            <span class="faq-icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-answer">
+            <p>This is almost always an iOS notification permission that got turned off. Go to
+            <strong>Settings → Notifications → Power Monitor</strong> and make sure
+            <strong>Allow Notifications</strong> is on and <strong>Alerts</strong> (not just Badges) is
+            enabled. Also check that a Focus or Do Not Disturb mode isn't silencing the app, and that
+            <strong>Background App Refresh</strong> is turned on for Power Monitor so it can stay
+            connected.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>How do I reset or remove a sensor?</span>
+            <span class="faq-icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-answer">
+            <p>Open the sensor's detail screen and tap <strong>Remove Sensor</strong>. This unlinks it from
+            your account and clears its notification history from your phone. The physical sensor will
+            restart its setup flow, ready to be paired again — either by you or a new owner.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Is my data private?</span>
+            <span class="faq-icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes — Power Monitor was built privacy-first. We only store what's needed to tell you a
+            sensor's status: its name, connection state, and outage timestamps. There's no ad tracking, no
+            data resale, and no analytics SDKs bundled into the app. If you'd rather not rely on our server
+            at all, the backend is open and self-hostable — run it on your own hardware and point your
+            sensors at it instead.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>What hardware do I need?</span>
+            <span class="faq-icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-answer">
+            <p>Power Monitor works with our small, low-power sensor, which plugs into any outlet. No
+            separate hub or subscription hardware is required — just one sensor per location you want to
+            monitor.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Can I monitor more than one location?</span>
+            <span class="faq-icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. Add as many sensors as you have locations — each one shows up as its own card on your
+            dashboard with independent status, history, and notifications.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <h2>Still need help?</h2>
+      <p class="contact-lead">We're happy to help with setup questions, account issues, or anything else.</p>
+      <div class="contact-links">
+        <a class="btn btn-primary" href="mailto:power.monitor.support@gmail.com">Email Support</a>
+        <a class="btn btn-secondary" href="https://github.com/Aleksandr802/power-monitor-support/issues/new" target="_blank" rel="noopener">Report a Bug on GitHub</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <p>&copy; 2026 Power Monitor. All rights reserved.</p>
+    <a href="#top">Back to top</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
