@@ -30,6 +30,15 @@ body {
   padding: 56px 0 32px;
   border-bottom: 1px solid var(--border);
   background: var(--bg-alt);
+  text-align: center;
+}
+
+.logo {
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 16px;
+  border-radius: 50%;
 }
 
 .eyebrow {
