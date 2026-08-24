@@ -16,7 +16,7 @@
     <img class="logo" src="../logo.png" alt="OutageSensor logo" width="80" height="80">
     <p class="eyebrow">OutageSensor</p>
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: August 9, 2026</p>
+    <p class="updated">Last updated: August 24, 2026</p>
   </div>
 </header>
 
@@ -52,8 +52,11 @@
     network during setup or reconfiguration. This exchange happens directly between the app and the sensor
     over Bluetooth — it does not pass through or get stored on our servers.</p>
     <p><strong>What we do not collect:</strong> we do not require or collect your name, email address, or
-    any account credentials — there is no account system. We do not track your location. We do not collect
-    browsing history or any data unrelated to sensor monitoring.</p>
+    any account credentials — there is no account system. We do not track your location — the app requests
+    Location permission solely because iOS requires it to read the current WiFi network name while
+    connecting a sensor to your home network during setup; we do not access, store, or transmit your
+    location, and this permission is never used for tracking. We do not collect browsing history or any
+    data unrelated to sensor monitoring.</p>
   </section>
 
   <section>
@@ -88,15 +91,26 @@
     your account, and are deleted when you remove the sensor from the app. We do not currently apply an
     automatic time-based deletion in addition to this — data is not kept indefinitely once you remove a
     sensor, but there is no separate countdown while it remains registered.</p>
+    <p>Your list of added sensors and their access tokens sync via Apple's iCloud (iCloud Key-Value Storage
+    and iCloud Keychain) so they follow you across your own devices signed into the same Apple ID. This sync
+    is handled entirely by Apple's infrastructure — we do not have access to your iCloud data.</p>
   </section>
 
   <section>
     <h2>Sensor Sharing Feature</h2>
-    <p>You can share a sensor with another person by giving them its device ID. When they add it in their
-    own copy of the app, they get <strong>read-only</strong> access — they can view the sensor's live status,
-    outage history, and receive their own outage notifications for it, but they cannot change its WiFi
-    configuration or other settings. Anyone who knows a sensor's device ID can add it this way, so treat the
-    device ID with the same care you'd give a shared password.</p>
+    <p>You can share read-only access to a sensor in two ways:</p>
+    <ul>
+      <li><strong>Share Sensor (recommended).</strong> From a sensor's detail screen, its owner can generate
+      a QR code and shareable link containing a unique, revocable access token. The recipient scans the code
+      or opens the link in their own copy of the app to get read-only access — they can view live status and
+      outage history and receive their own notifications, but cannot change WiFi or other settings. The
+      owner can revoke this access at any time from <strong>Manage Sharing</strong>, which immediately cuts
+      off the recipient's access.</li>
+      <li><strong>Add Sensor by MAC Address.</strong> Anyone who knows a sensor's device ID (its hardware MAC
+      address) can add it directly in their own copy of the app for read-only monitoring. This method has no
+      owner-issued token and cannot be revoked — treat a sensor's MAC address with the same care you'd give a
+      shared password if you don't want others to be able to add it this way.</li>
+    </ul>
   </section>
 
   <section>
