@@ -38,9 +38,10 @@
           </button>
           <div class="faq-answer">
             <p>Tap the <strong>+</strong> button on the dashboard, then follow the in-app setup flow: your
-            phone connects to the sensor's temporary Wi-Fi hotspot, you choose your home network and give
-            the sensor a name, and it's online within a minute or two. No soldering or extra hardware app
-            needed — just the sensor and your phone.</p>
+            phone connects to the sensor over Bluetooth, you pick your home network from the list the sensor
+            scans for you, give the sensor a name, and it's online within a minute or two. Everything is sent
+            to the sensor directly over Bluetooth — your phone never has to join the sensor's own network. No
+            soldering or extra hardware needed — just the sensor and your phone.</p>
           </div>
         </div>
 
@@ -71,10 +72,10 @@
             their own outage notifications, but can't change its Wi-Fi setup or other settings. You can see
             everyone you've shared with, and revoke access at any time, from <strong>Manage Sharing</strong>.
             Handy for a shared vacation home or keeping an eye on a parent's house.</p>
-            <p>There's also a simpler option, <strong>Add Sensor by MAC Address</strong>, where anyone who
-            knows the sensor's device ID can add it themselves for read-only monitoring — but unlike Share
-            Sensor, this can't be revoked later, so it's best for cases where you fully trust whoever you
-            give the ID to.</p>
+            <p>There's also an <strong>Add Sensor by MAC Address</strong> option in the app, but it isn't a
+            way to share access — it only works if your app already holds valid credentials for that sensor,
+            synced via iCloud Keychain (for example, re-adding it after reinstalling the app). It can't be
+            used to add a sensor you don't already have access to.</p>
           </div>
         </div>
 
@@ -87,9 +88,9 @@
             <p>This is almost always an iOS notification permission that got turned off. Go to
             <strong>Settings → Notifications → OutageSensor</strong> and make sure
             <strong>Allow Notifications</strong> is on and <strong>Alerts</strong> (not just Badges) is
-            enabled. Also check that a Focus or Do Not Disturb mode isn't silencing the app, and that
-            <strong>Background App Refresh</strong> is turned on for OutageSensor so it can stay
-            connected.</p>
+            enabled. Also check that a Focus or Do Not Disturb mode isn't silencing the app. Outage alerts
+            arrive as push notifications, so they don't depend on Background App Refresh or the app being
+            open — as long as notifications are allowed, they'll come through.</p>
           </div>
         </div>
 
@@ -99,9 +100,11 @@
             <span class="faq-icon" aria-hidden="true"></span>
           </button>
           <div class="faq-answer">
-            <p>Open the sensor's detail screen and tap <strong>Remove Sensor</strong>. This unlinks it from
-            your account and clears its notification history from your phone. The physical sensor will
-            restart its setup flow, ready to be paired again — either by you or a new owner.</p>
+            <p>Open the sensor's detail screen and tap <strong>Remove Sensor</strong>. If you're the owner,
+            this fully revokes it from your account — the sensor factory-resets automatically the next time
+            it checks in, ready to be paired again by you or a new owner. If it was added via Share Sensor or
+            by MAC address, you'll see <strong>Remove from App Only</strong> instead, which just unlinks it
+            from your copy of the app without affecting the owner's sensor.</p>
           </div>
         </div>
 
