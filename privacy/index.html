@@ -16,7 +16,7 @@
     <img class="logo" src="../logo.png" alt="OutageSensor logo" width="80" height="80">
     <p class="eyebrow">OutageSensor</p>
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: August 24, 2026</p>
+    <p class="updated">Last updated: October 4, 2026</p>
   </div>
 </header>
 
@@ -27,7 +27,7 @@
     <p>OutageSensor ("the app," "we," "us") is developed and operated by <strong>Oleksandr Seminov</strong>, an
     independent developer — not a company. This Privacy Policy explains what information the app and its
     companion cloud service collect, how that information is used, and the choices you have. It applies to
-    the OutageSensor iOS app.</p>
+    the OutageSensor iOS and Android apps.</p>
   </section>
 
   <section>
@@ -40,13 +40,19 @@
       <li><strong>Outage event data and timestamps.</strong> When a sensor detects a power or internet
       outage (and when it recovers), the event and its timestamp are recorded so the app can show you outage
       history and send alerts.</li>
-      <li><strong>Push notification tokens.</strong> If you enable notifications, Apple issues a device
-      token that we use solely to deliver outage alerts to your device via Apple's push notification
-      service.</li>
+      <li><strong>Push notification tokens.</strong> If you enable notifications, Apple (on iOS) or Google
+      Firebase Cloud Messaging (on Android) issues a device token that we use solely to deliver outage
+      alerts to your device.</li>
       <li><strong>Subscription/purchase status.</strong> Pro subscriptions (Monthly/Yearly) are purchased
       and managed entirely through Apple's in-app purchase system. Apple handles your payment information;
-      we never see or store it. We only receive confirmation of whether a subscription is active, to unlock
-      monitoring for more than one sensor.</li>
+      we never see or store it. To unlock Pro features and apply the Pro sensor limit, the app sends our server
+      the Apple-signed record of your active subscription. Our server verifies Apple's signature and stores
+      only the subscription's anonymous transaction ID and expiration date, linked to your device's push
+      notification token. This information is not linked to your identity and is never used for tracking or
+      advertising.</li>
+      <li><strong>Approximate country.</strong> To decide whether to show a link to buy a sensor in your
+      region, our network provider determines the approximate country of your connection from its IP address.
+      We use it only for that decision and do not store it.</li>
     </ul>
     <p><strong>Your home WiFi network name and password</strong> are used only to connect a sensor to your
     network during setup or reconfiguration. This exchange happens directly between the app and the sensor
@@ -75,6 +81,8 @@
     <ul>
       <li><strong>Cloud hosting and network infrastructure providers</strong> — the servers and network
       services that relay sensor status data between your sensors and the app.</li>
+      <li><strong>Google</strong> — for delivering push notifications on Android (Firebase Cloud
+      Messaging).</li>
       <li><strong>Apple</strong> — for delivering push notifications (Apple Push Notification service) and
       for processing subscription purchases (App Store).</li>
     </ul>
